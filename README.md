@@ -3,9 +3,9 @@ transmission-daemon running in a docker container (Ubuntu:Trusty)
 
 The following paths are used by transmission:
 
-* /torrent/completed (completed dir)
-* /torrent/incomplete (incomplete dir)
-* /torrent/torrents (watch dir)
+* `/torrent/completed` (completed dir)
+* `/torrent/incomplete` (incomplete dir)
+* `/torrent/torrents` (watch dir)
 
 The RPC is listening without authentication required on the default port (9091), and the RPC IP whitelist is disabled.
 
