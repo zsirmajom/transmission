@@ -11,6 +11,6 @@ ADD etc/transmission-daemon/settings.json /etc/transmission-daemon/settings.json
 
 VOLUME ["/torrent"]
 
-EXPOSE 80 51413/tcp 51413/udp
+EXPOSE 9091 51413/tcp 51413/udp
 
 CMD ["transmission-daemon", "-f", "--config-dir", "/var/lib/transmission-daemon/info", "--log-error"]
