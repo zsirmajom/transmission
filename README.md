@@ -1,5 +1,5 @@
 # transmission
-transmission-daemon running in a docker container (Ubuntu:Trusty)
+transmission-daemon running in a container (ubuntu:trusty)
 
 The following paths are used by transmission:
 
@@ -12,7 +12,7 @@ The RPC is listening without authentication required on the default port (9091),
 I recommend to use it with docker-compose, here's an example docker-compose.yml:
 ```
 transmission:
-    build: zsirmajom/transmission
+    image: zsirmajom/transmission
     volumes: 
         - /torrent:/torrent
     net: host
