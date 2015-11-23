@@ -9,7 +9,7 @@ RUN apt-get update -q ;\
     
 ADD etc/transmission-daemon/settings.json /etc/transmission-daemon/settings.json
 
-VOLUME ["/torrent"]
+VOLUME ["/torrent", "/var/lib/transmission-daemon"]
 
 EXPOSE 9091 51413/tcp 51413/udp
 
